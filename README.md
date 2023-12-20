@@ -16,7 +16,7 @@ Colorscheme supports:
     - [ ] Mason
 - [ ] Visual Studio Code
 - [ ] Terminal
-    - [ ] Alacritty
+    - [x] Alacritty
     - [ ] Kitty
     - [ ] Rio
     - [ ] Windows Terminal
