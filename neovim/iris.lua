@@ -6,6 +6,7 @@ function NeoVim(palette)
     vim.cmd('hi StatusLineNC guifg=' .. palette.unused .. ' guibg=' .. palette.bg)
     vim.cmd('hi WinSeparator guifg=' .. palette.unused .. ' guibg=' .. palette.bg)
     vim.cmd('hi VertSplit guifg=' .. palette.unused)
+    vim.cmd('hi LineNr guifg=' .. palette.line_nr)
 end
 
 function SyntaxHighlight(palette)
@@ -27,16 +28,20 @@ function SyntaxHighlight(palette)
     vim.cmd('hi PreProc guifg=' .. palette.preproc)
     vim.cmd('hi Tag guifg=' .. palette.tag)
     vim.cmd('hi Include guifg=' .. palette.include)
-    vim.cmd('hi None guifg=' .. palette.fg)
     vim.cmd('hi htmlTag guifg=' .. palette.tag)
     vim.cmd('hi htmlTagName guifg=' .. palette.tagName)
     vim.cmd('hi htmlArg guifg=' .. palette.htmlArg)
     vim.cmd('hi cssSelectorOp guifg=' .. palette.cssSelectorOp)
     vim.cmd('hi cssSelectorOp2 guifg=' .. palette.cssSelectorOp2)
+    vim.cmd('hi Macro guifg=' .. palette.macro)
     vim.cmd('hi @field guifg=' .. palette.field)
     vim.cmd('hi @property guifg=' .. palette.field)
     vim.cmd('hi @parameter guifg=' .. palette.field)
+    vim.cmd('hi @namespace guifg=' .. palette.namespace)
+    vim.cmd('hi @variable.builtin guifg=' .. palette.reference)
     vim.cmd('hi @tag.attribute guifg=' .. palette.htmlArg)
+    vim.cmd('hi @lsp.type.enum guifg=' .. palette.structure)
+    vim.cmd('hi @lsp.type.enumMember guifg=' .. palette.number)
 end
 
 function NvimTree(palette)
@@ -58,20 +63,23 @@ config.setup = function()
         string = '#907DFF',
         number = '#C8BFFF',
         boolean = '#FF5E7B',
-        function_color = '#3DA895',
+        macro = '#0AB4AA',
+        function_color = '#07C3A2',
+        structure = '#23C3DE',
         keyword = '#6977FF',
         include = '#6977FF',
+        namespace = '#DAD4FF',
         statement = '#6977FF',
         conditional = '#6977FF',
         repeat_cond = '#6977FF',
-        type = '#60FFC6',
-        constant = '#FF93A6',
+        type = '#98ADF5',
+        constant = '#6C69B0',
         error = '#ff0000',
         warning_msg = '#ff8800',
         search = '#ffffff',
         visual = '#404040',
         cursor = '#ffffff',
-        line_nr = '#606060',
+        line_nr = '#A5A5A5',
         vert_split = '#404040',
         status_line = '#6977FF',
         diff_add = '#335533',
@@ -88,6 +96,7 @@ config.setup = function()
         htmlArg = '#C8BFFF',        -- HTML tag attributes
         cssSelectorOp = '#C8BFFF',  -- CSS selector operator
         cssSelectorOp2 = '#6C69B0', -- CSS selector operator (e.g., ::before)
+        reference = '#6C69B0'
     }
 
     NeoVim(palette)
