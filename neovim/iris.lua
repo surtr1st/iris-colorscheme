@@ -7,6 +7,7 @@ function NeoVim(palette)
     vim.cmd('hi WinSeparator guifg=' .. palette.unused .. ' guibg=' .. palette.bg)
     vim.cmd('hi VertSplit guifg=' .. palette.unused)
     vim.cmd('hi LineNr guifg=' .. palette.line_nr)
+    vim.cmd('hi Directory guifg=' .. palette.tag)
 end
 
 function SyntaxHighlight(palette)
@@ -46,7 +47,8 @@ end
 
 function NvimTree(palette)
     vim.cmd('hi NvimTreeNormal guifg=' .. palette.fg .. ' guibg=' .. palette.bg)
-    vim.cmd('hi NvimTreeFolderName guifg=' .. palette.function_color)
+    vim.cmd('hi NvimTreeFolderName guifg=' .. palette.structure)
+    vim.cmd('hi NvimTreeOpenedFolderName guifg=' .. palette.macro)
     vim.cmd('hi NvimTreeGitDirty guifg=' .. palette.constant)
     vim.cmd('hi NvimTreeRootFolder guifg=' .. palette.keyword)
     vim.cmd('hi NvimTreeVertSplit guifg=' .. palette.unused .. ' guibg=' .. palette.bg)
