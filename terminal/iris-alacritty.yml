@@ -1,5 +1,4 @@
 colors:
-  # Default colors
   primary:
     background: '#1A1A1A'
     foreground: '#FFFFFF'
@@ -8,10 +7,9 @@ colors:
     cursor: '#60FFC6'
 
   selection:  
-    text: CellForeground
+    text: '#FFFFFF'
     background: '#29263c'
     
-  # Normal colors
   normal:
     black:   '#656565'
     red:     '#FF5E7B'
@@ -20,9 +18,8 @@ colors:
     blue:    '#6977FF'
     magenta: '#907DFF'
     cyan:    '#60FFC6'
-    white:   '#907DFF'
+    white:   '#FFFFFF'
 
-  # Bright colors
   bright:
     black:   '#656565'
     red:     '#FF5E7B'
@@ -31,4 +28,4 @@ colors:
     blue:    '#6977FF'
     magenta: '#907DFF'
     cyan:    '#60FFC6'
-    white:   '#907DFF'
+    white:   '#FFFFFF'
