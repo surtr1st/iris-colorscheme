@@ -19,5 +19,5 @@ Colorscheme supports:
     - [x] Alacritty
     - [ ] Kitty
     - [ ] Rio
-    - [ ] Windows Terminal
+    - [x] Windows Terminal
 
