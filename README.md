@@ -1,5 +1,7 @@
 # :construction: WORK IN PROGRESS :construction:
 
+![iris-colorscheme-v1]('./versions/iris-colorscheme-v1.0.png')
+
 # Goals
 
 Syntax Highlighting supports:
