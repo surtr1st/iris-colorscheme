@@ -1,3 +1,6 @@
+-- Colorscheme:     Iris
+-- Version:         1.1
+
 local config = {}
 
 function NeoVim(palette)
@@ -35,6 +38,8 @@ function SyntaxHighlight(palette)
     vim.cmd('hi cssSelectorOp guifg=' .. palette.cssSelectorOp)
     vim.cmd('hi cssSelectorOp2 guifg=' .. palette.cssSelectorOp2)
     vim.cmd('hi Macro guifg=' .. palette.macro)
+    vim.cmd('hi Special guifg=' .. palette.special)
+    vim.cmd('hi Delimiter guifg=' .. palette.delimiter)
     vim.cmd('hi @field guifg=' .. palette.field)
     vim.cmd('hi @property guifg=' .. palette.field)
     vim.cmd('hi @parameter guifg=' .. palette.field)
@@ -91,14 +96,15 @@ config.setup = function()
         field = '#FFD6B0',
         operator = '#A5A5A5',       -- Operator (+, -, *, /, =, etc.)
         identifier = '#FFFFFF',     -- Identifier, variable names
-        special = '#6C69B0',        -- Special characters and escape sequences
+        special = '#23C3DE',        -- Special characters and escape sequences
         preproc = '#569cd6',        -- Preprocessor statements (#include, #define, etc.)
         tag = '#FFBE82',            -- HTML tags
         tagName = '#FFBE82',        -- HTML tag name
         htmlArg = '#C8BFFF',        -- HTML tag attributes
         cssSelectorOp = '#C8BFFF',  -- CSS selector operator
         cssSelectorOp2 = '#6C69B0', -- CSS selector operator (e.g., ::before)
-        reference = '#6C69B0'
+        reference = '#6C69B0',
+        delimiter = '#23C3DE'
     }
 
     NeoVim(palette)
