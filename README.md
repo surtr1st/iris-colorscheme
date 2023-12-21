@@ -14,7 +14,7 @@ Syntax Highlighting supports:
 Colorscheme supports:
 - [ ] Neovim
     - [ ] Telescope
-    - [ ] NvimTree
+    - [x] NvimTree
     - [ ] Mason
 - [ ] Visual Studio Code
 - [ ] Terminal
