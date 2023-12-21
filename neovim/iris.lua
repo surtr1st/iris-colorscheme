@@ -17,7 +17,7 @@ function SyntaxHighlight(palette)
     vim.cmd('hi Variable guifg=' .. palette.fg)
     vim.cmd('hi Comment guifg=' .. palette.comment)
     vim.cmd('hi String guifg=' .. palette.string)
-    vim.cmd('hi Number guifg=' .. palette.number)
+    vim.cmd('hi Number gui=bold guifg=' .. palette.number)
     vim.cmd('hi Boolean guifg=' .. palette.boolean)
     vim.cmd('hi Function guifg=' .. palette.function_color)
     vim.cmd('hi Keyword guifg=' .. palette.keyword)
@@ -38,7 +38,6 @@ function SyntaxHighlight(palette)
     vim.cmd('hi cssSelectorOp guifg=' .. palette.cssSelectorOp)
     vim.cmd('hi cssSelectorOp2 guifg=' .. palette.cssSelectorOp2)
     vim.cmd('hi Macro guifg=' .. palette.macro)
-    vim.cmd('hi Special guifg=' .. palette.special)
     vim.cmd('hi Delimiter guifg=' .. palette.delimiter)
     vim.cmd('hi @field guifg=' .. palette.field)
     vim.cmd('hi @property guifg=' .. palette.field)
@@ -48,6 +47,7 @@ function SyntaxHighlight(palette)
     vim.cmd('hi @tag.attribute guifg=' .. palette.htmlArg)
     vim.cmd('hi @lsp.type.enum guifg=' .. palette.structure)
     vim.cmd('hi @lsp.type.enumMember guifg=' .. palette.number)
+    vim.cmd('hi @punctuation guifg=' .. palette.special)
 end
 
 function NvimTree(palette)
@@ -79,7 +79,8 @@ config.setup = function()
         statement = '#6977FF',
         conditional = '#6977FF',
         repeat_cond = '#6977FF',
-        type = '#98ADF5',
+        type = '#23C3DE',
+        alter_type = '#98ADF5',
         constant = '#6C69B0',
         error = '#ff0000',
         warning_msg = '#ff8800',
@@ -93,10 +94,10 @@ config.setup = function()
         diff_change = '#454545',
         diff_delete = '#553333',
         todo = '#ffcc00',
-        field = '#FFD6B0',
+        field = '#FFE1C6',
         operator = '#A5A5A5',       -- Operator (+, -, *, /, =, etc.)
         identifier = '#FFFFFF',     -- Identifier, variable names
-        special = '#23C3DE',        -- Special characters and escape sequences
+        special = '#98ADF5',        -- Special characters and escape sequences
         preproc = '#569cd6',        -- Preprocessor statements (#include, #define, etc.)
         tag = '#FFBE82',            -- HTML tags
         tagName = '#FFBE82',        -- HTML tag name
