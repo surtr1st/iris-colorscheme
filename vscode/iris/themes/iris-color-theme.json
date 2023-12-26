@@ -16,7 +16,6 @@
     "sideBarSectionHeader.foreground": "#6977FF",
     "button.background": "#6977FF",
     "button.hoverBackground": "#98ADF5",
-    "titleBar.activeForeground": "#6977FF",
     "statusBar.background": "#1A1A1A",
     "input.border": "#6977FF",
     "badge.background": "#6977FF",
@@ -81,7 +80,10 @@
     },
     {
       "name": "Tag Attribute/Enum Member",
-      "scope": ["entity.other.attribute-name", "meta.attribute"],
+      "scope": [
+        "entity.other.attribute-name",
+        "meta.attribute"
+      ],
       "settings": {
         "foreground": "#C8BFFF"
       }
@@ -162,7 +164,10 @@
     },
     {
       "name": "Tag",
-      "scope": ["entity.name.tag", "support.type.property-name.json"],
+      "scope": [
+        "entity.name.tag",
+        "support.type.property-name.json"
+      ],
       "settings": {
         "foreground": "#FFBE82"
       }
@@ -193,7 +198,10 @@
     },
     {
       "name": "Macro",
-      "scope": ["entity.name.function.macro.rust", "meta.macro.rust"],
+      "scope": [
+        "entity.name.function.macro.rust",
+        "meta.macro.rust"
+      ],
       "settings": {
         "foreground": "#0AB4AA"
       }
