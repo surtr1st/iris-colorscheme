@@ -1,7 +1,7 @@
 -- Colorscheme:     Iris
 -- Version:         1.1
 
-local config = {}
+local M = {}
 
 function NeoVim(palette)
     vim.cmd('hi Normal guifg=' .. palette.fg .. ' guibg=' .. palette.bg)
@@ -60,7 +60,7 @@ function NvimTree(palette)
     vim.cmd('hi NvimTreeWinSeparator guifg=' .. palette.unused .. ' guibg=' .. palette.bg)
 end
 
-config.setup = function()
+M.setup = function()
     local palette = {
         bg = '#1A1A1A',
         fg = '#FFFFFF',
@@ -113,4 +113,4 @@ config.setup = function()
     NvimTree(palette)
 end
 
-return config
+return M
