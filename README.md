@@ -16,6 +16,7 @@ Colorscheme supports:
     - [ ] Telescope
     - [x] NvimTree
     - [ ] Mason
+    - [ ] Transparency
 - [ ] Visual Studio Code
 - [ ] Terminal
     - [x] Alacritty
